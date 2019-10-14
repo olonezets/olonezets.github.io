@@ -1,0 +1,36 @@
+			
+			/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+			gav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			    }
+			
+			/* применяем inline-block позиционирование к элементам навигации */
+			gav ul li {
+			    margin: 0px -7px 0 0;
+			    display:inline-block;
+			    
+			    }
+			    
+/* скрываем выпадающие списки по умолчанию и задаем абсолютное позиционирование */
+			gav ul ul {
+			    display: none;
+			    
+			    top: 100%;
+			}
+			
+			/* отображаем выпадающий список при наведении */
+			gav ul li:hover > ul {
+			    display:inherit;
+			}
+			
+			/* первый уровень выпадающего списка */
+			gav ul ul li {
+			    min-width:170px;
+			    float:none;
+			    display:list-item;
+			    position: relative;
+			}
